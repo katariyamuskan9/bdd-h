@@ -1,0 +1,736 @@
+html,body {
+    background:#000;
+    margin:0;
+    padding:0;
+    min-width:800px;
+    min-height:853px;
+    
+}
+
+.l-wrapper {
+    position:relative;
+    width:800px;
+    height:853px;
+    margin:0 auto;
+    overflow:hidden;
+}
+.l-logo {
+    width:657px;
+    height:71px;
+    margin:63px auto 0;
+}
+.logo{
+    font-size: 100px;
+}
+
+/*sound*/
+
+/*logo*/
+.b-logo {
+    width:657px;
+    height:71px;
+    background:url('data:image/png;base64,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')  0 0 no-repeat;
+    background-size: 641px 81px;
+
+}
+
+   .b-logo .fire {
+        width:10px;
+        height:10px;
+        border-radius:15px;
+        float:left;
+        animation: loading 2s infinite alternate;
+        -webkit-animation: loading 2s infinite alternate;
+    }
+    
+   .b-logo .red {background:#EC1C24; box-shadow: 0 0 20px 2px #EC1C24;
+        animation-delay: 0.7s;
+        -webkit-animation-delay: 0.7s;
+    }
+   
+    .b-logo .yellow {background:#FDB612; box-shadow: 0 0 20px 2px #FDB612;
+        animation-delay: 0.4s;
+        -webkit-animation-delay: 0.4s;
+    }
+    
+    .b-logo .blue {background:#00B0EA; box-shadow: 0 0 20px 2px #00B0EA;
+        animation-delay: 0.9s;
+        -webkit-animation-delay: 0.9s;
+    }
+    
+    .b-logo ._f {margin:30px 0 0 75px;}
+    .b-logo ._r {margin:30px 0 0 100px;}
+    .b-logo ._i {margin:30px 0 0 60px;
+   
+    }
+    .b-logo ._e {margin:30px 0 0 90px;}
+    .b-logo ._n {margin:30px 0 0 100px;}
+    .b-logo ._d {margin:30px 0 0 105px;}
+
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes loading {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*friends*/
+.b-friends{
+    width:875px;
+    margin:20px auto;
+    height: 800px;
+   
+}
+
+.fr_item
+{
+    float: left;
+    width: 160px;
+    height: 250px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+   margin-bottom: 5px;
+   margin-right: 5px;
+    border: 2px solid black;
+}
+.fr_item:hover{
+    transform: rotateY(180deg);
+}
+
+ .back .quote{
+    font-size: 15px;
+}
+
+.fr_name{
+    color:black;
+    font-size: 30px;
+    font-weight: bold;
+}
+ .fr_img img{
+    width: 160px;
+    height: 250px;
+ }
+.btn{
+    margin:10px 40px 0px 0px;
+    background-color: yellowgreen;
+    
+}
+
+.hardik{
+    position: relative;;
+    width: 160px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+    background-color: yellow;
+}
+.hardik .front{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: red;
+    color:wheat;
+    
+    background-color: hotpink;
+}
+.hardik .back{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: #FFE07A;
+    color:black;
+    transform: rotateY(180deg);
+}
+.karan{
+    position: relative;;
+    width: 160px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+    background-color: yellow;
+}
+.karan .front{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+   
+    color:wheat;
+ ;
+    background-color: hotpink;
+}
+.karan .back{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: #FFE07A;
+    color:black;
+    transform: rotateY(180deg);
+   
+}
+.muskan{
+    position: relative;;
+    width: 160px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+    background-color: yellow;
+}
+.muskan .front{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: red;
+    color:wheat;
+    
+    background-color: hotpink;
+}
+.muskan .back{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: #FFE07A;
+    color:black;
+    transform: rotateY(180deg);
+}
+.gayatri{
+    position: relative;;
+    width: 160px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+    background-color: yellow;
+}
+.gayatri .front{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: red;
+    color:wheat;
+    
+    background-color: hotpink;
+}
+.gayatri .back{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: #FFE07A;
+    color:black;
+    transform: rotateY(180deg);
+}
+.lalit{
+    position: relative;;
+    width: 160px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+    background-color: yellow;
+}
+.lalit .front{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: red;
+    color:wheat;
+    
+    background-color: hotpink;
+}
+.lalit .back{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: #FFE07A;
+    color:black;
+    transform: rotateY(180deg);
+}
+.nilesh{
+    position: relative;;
+    width: 160px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+    background-color: yellow;
+}
+.nilesh .front{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: red;
+    color:wheat;
+    
+    background-color: hotpink;
+}
+.nilesh .back{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: #FFE07A;
+    color:black;
+    transform: rotateY(180deg);
+}
+.ishwar{
+    position: relative;;
+    width: 160px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+    background-color: yellow;
+}
+.ishwar .front{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: red;
+    color:wheat;
+    
+    background-color: hotpink;
+}
+.ishwar .back{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: #FFE07A;
+    color:black;
+    transform: rotateY(180deg);
+}
+.sushant{
+    position: relative;;
+    width: 160px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+    background-color: yellow;
+}
+.sushant .front{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: red;
+    color:wheat;
+    
+    background-color: hotpink;
+}
+.sushant .back{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: #FFE07A;
+    color:black;
+    transform: rotateY(180deg);
+}
+.vish{
+    position: relative;;
+    width: 160px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+    background-color: yellow;
+}
+.vish .front{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: red;
+    color:wheat;
+    
+    background-color: hotpink;
+}
+.vish .back{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: #FFE07A;
+    color:black;
+    transform: rotateY(180deg);
+}
+.vishal{
+    position: relative;;
+    width: 160px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+    background-color: yellow;
+}
+.vishal .front{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: red;
+    color:wheat;
+    
+    background-color: hotpink;
+}
+.vishal .back{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: #FFE07A;
+    color:black;
+    transform: rotateY(180deg);
+}
+.rishabh{
+    position: relative;;
+    width: 160px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+    background-color: yellow;
+}
+.rishabh .front{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: red;
+    color:wheat;
+    
+    background-color: hotpink;
+}
+.rishabh .back{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: #FFE07A;
+    color:black;
+    transform: rotateY(180deg);
+}
+.yash{
+    position: relative;;
+    width: 160px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+    background-color: yellow;
+}
+.yash .front{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: red;
+    color:wheat;
+    
+    background-color: hotpink;
+}
+.yash .back{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: #FFE07A;
+    color:black;
+    transform: rotateY(180deg);
+}
+.pramod{
+    position: relative;;
+    width: 160px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+    background-color: yellow;
+}
+.pramod .front{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: red;
+    color:wheat;
+    
+    background-color: hotpink;
+}
+.pramod .back{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+    background-color: #FFE07A;
+    color:black;
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+    .fr_name {
+        text-align:center;
+        opacity:.8;
+        font:16px 'Century Gothic', arial;
+        cursor:default;
+    }
+    
+    .back {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    cursor:default;
+    color:#333;
+    }
+    
+    .quote {
+        text-align:left;
+        font:16px 'Century Gothic', arial;
+        width:80%;
+        margin:12px auto 0;
+    }
+    
+    .episode {
+        text-align:right;
+        font-size:13px;
+        color:#000;
+        margin-top:7px;
+    }
+button{
+   margin: 0 20px;
+}
+button:hover{
+    background-color: black;
+    color: wheat;
+}
+a{
+    border:2px solid black;
+    padding:10px 40px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    background: rgb(114, 161, 18);
+    border-radius: 10px;
+    width:100px;
+   display: inline;
+    text-transform: uppercase;
+    white-space: nowrap;
+   
+   position: relative;
+   top:20px;
+   left:200px;
+ 
+   font-weight: bold;
+   cursor: pointer;
+
+    
+  }
+    @media screen and (max-width:520px){
+       
+       a{
+           position: relative;
+           left:-250px;
+           top:300px;
+       }
+        
+        .b-logo{
+            background-size: 400px;
+        }
+     body{
+         overflow-x: hidden;
+     }
+        .b-friends{
+            width:700px;
+           
+            margin-left:0px;
+        }
+        
+        .b-logo ._f {margin:16px 0 0 48px;}
+    .b-logo ._r {margin:16px 0 0 51px;}
+    .b-logo ._i {margin:16px 0 0 36px;
+   
+    }
+    .b-logo ._e {margin:16px 0 0 54px;}
+    .b-logo ._n {margin:16px 0  0 62px;}
+    .b-logo ._d {margin:16px 0 0 52px;}
+
+
+        
+        .karan .front{
+            width: 156px;
+            height: 226px;
+        }
+        .karan {
+            width: 156px;
+            height: 226px;
+           
+        }
+        .karan .back{
+            width: 156px;
+            height: 226px;
+        }
+        .rishabh .front{
+            width: 156px;
+            height: 226px;
+        }
+        .rishabh {
+            width: 156px;
+            height: 226px;
+        }
+        .rishabh.back{
+            width: 156px;
+            height: 226px;
+        }
+        .yash .front{
+            width: 156px;
+            height: 226px;
+        }
+        .yash {
+            width: 156px;
+            height: 226px;
+        }
+        .yash.back{
+            width: 156px;
+            height: 226px;
+        }
+        .hardik .front{
+            width: 156px;
+            height: 226px;
+        }
+        .hardik {
+            width: 156px;
+            height: 226px;
+        }
+        .hardik .back{
+            width: 156px;
+            height: 226px;
+        }
+        .muskan .front{
+            width: 156px;
+            height: 226px;
+        }
+        .muskan {
+            width: 156px;
+            height: 226px;
+        }
+        .muskan .back{
+            width: 156px;
+            height: 226px;
+        }
+        .gayatri .front{
+            width: 156px;
+            height: 226px;
+        }
+        .gayatri {
+            width: 156px;
+            height: 226px;
+        }
+        .gayatri .back{
+            width: 156px;
+            height: 226px;
+        }
+        .lalit .front{
+            width: 156px;
+            height: 226px;
+        }
+        .lalit {
+            width: 156px;
+            height: 226px;
+        }
+        .lalit .back{
+            width: 156px;
+            height: 226px;
+        }
+        .nilesh .front{
+            width: 156px;
+            height: 226px;
+        }
+        .nilesh {
+            width: 156px;
+            height: 226px;
+        }
+        .nilesh .back{
+            width: 156px;
+            height: 226px;
+        }
+        .pramod .front{
+            width: 156px;
+            height: 226px;
+        }
+        .pramod {
+            width: 156px;
+            height: 226px;
+        }
+        .pramod .back{
+            width: 156px;
+            height: 226px;
+        }
+        .ishwar .front{
+            width: 156px;
+            height: 226px;
+        }
+        .ishwar {
+            width: 156px;
+            height: 226px;
+        }
+        .ishwar .back{
+            width: 156px;
+            height: 226px;
+        }
+        .sushant .front{
+            width: 156px;
+            height: 226px;
+        }
+        .sushant {
+            width: 156px;
+            height: 226px;
+        }
+        .sushant .back{
+            width: 156px;
+            height: 226px;
+        }
+        .vishal .front{
+            width: 156px;
+            height: 226px;
+        }
+        .vishal {
+            width: 156px;
+            height: 226px;
+        }
+        .vishal.back{
+            width: 156px;
+            height: 226px;
+        }
+        .vish .front{
+            width: 156px;
+            height: 226px;
+        }
+        .vish {
+            width: 156px;
+            height: 226px;
+        }
+        .vish .back{
+            width: 156px;
+            height: 226px;
+        }
+    
+    }
