@@ -196,39 +196,50 @@ video{
   font-size: 50px;
   margin-top:10px;
 }
+.hy{
+  width: 500px;position: relative;  top:100px;   ; font-size: 25px;
+}
 @media screen and (max-width:480px){
-  
+  .hy{
+    width: 500px; margin-top:10px;    ; font-size: 25px;
+  }
  
 body{
   overflow-x: hidden;
 }
 .central{
-    left:70px;
-    width: 350px;
+    left:120px;
+   margin-top:1px;
+    width: 200px;
 
   
 }
 .guitar{
   left:25px;
+  top:600px;
   width: 100px;
 }
 .sofa{
   left:100px;
   width: 100px;
+  top:600px;
 }
 
 .pizza{
   left:200px;
   width: 100px;
+  top:600px;
 }
 
 .turkey{
   left:0px;
   margin-left: 0px;
+  top:600px;
  
 }
 .marcel{
   left:300px;
+  top:600px;
 }
 video{
   margin: 2px;
@@ -238,6 +249,18 @@ video{
   
 }
 .container{
-  margin:9px;
+  margin-top:120px;
+}
+#btn{
+  padding: 10px 30px;
+  font-size: 15px;
+ 
+}
+.btn1{
+  
+  margin-top: 0px;
+  font-size: 15px;
+ 
+
 }
 }
