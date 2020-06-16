@@ -201,7 +201,7 @@ video{
 }
 @media screen and (max-width:480px){
   .hy{
-    width: 500px; position: relative; top:150px;    ; font-size: 25px;
+    width: 500px; margin-top: 135px;    ; font-size: 25px;
   }
  
 body{
@@ -216,25 +216,25 @@ body{
 }
 .guitar{
   left:25px;
-  top:700px;
+  top:550px;
   width: 100px;
 }
 .sofa{
   left:100px;
   width: 100px;
-  top:700px;
+  top:550px;
 }
 
 .pizza{
   left:200px;
   width: 100px;
-  top:700px;
+  top:550x;
 }
 
 .turkey{
   left:0px;
   margin-left: 0px;
-  top:700px;
+  top:550px;
  
 }
 .marcel{
