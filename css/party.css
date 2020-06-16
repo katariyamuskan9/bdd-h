@@ -216,30 +216,30 @@ body{
 }
 .guitar{
   left:25px;
-  top:550px;
+  top:600px;
   width: 100px;
 }
 .sofa{
   left:100px;
   width: 100px;
-  top:550px;
+  top:600px;
 }
 
 .pizza{
   left:200px;
   width: 100px;
-  top:550x;
+  top:600px;
 }
 
 .turkey{
   left:0px;
   margin-left: 0px;
-  top:550px;
+  top:600px;
  
 }
 .marcel{
   left:300px;
-  top:550px;
+  top:600px;
 }
 video{
   margin: 2px;
